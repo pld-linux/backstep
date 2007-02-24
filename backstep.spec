@@ -1,5 +1,5 @@
 Summary:	Program that draws icons for minimized windows on desktop
-Summary(pl.UTF-8)   :Program który rysuje ikony zminimalizowanych aplikacji na pulpicie
+Summary(pl.UTF-8):	Program który rysuje ikony zminimalizowanych aplikacji na pulpicie
 Name:		backstep
 Version:	0.3
 Release:	0.1
