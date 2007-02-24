@@ -1,0 +1,12 @@
+diff -urN backstep-0.3/configure.in backstep-0.3.new/configure.in
+--- backstep-0.3/configure.in	2005-09-26 01:25:23.000000000 +0200
++++ backstep-0.3.new/configure.in	2007-02-24 10:41:09.257433000 +0100
+@@ -41,7 +41,7 @@
+ AM_GLIB_GNU_GETTEXT
+ 
+ if $PKG_CONFIG --exists xcomposite xfixes xdamage xrender 2> /dev/null; then
+-    PKG_CHECK_MODULES(RENDER, xcomposite >= 1.0 xfixes xdamage xrender)
++    PKG_CHECK_MODULES(RENDER, xcomposite xfixes xdamage xrender)
+     AC_DEFINE([HAVE_RENDER], [1], [Define to enable Xrender suppport])
+ fi
+ 
