@@ -1,5 +1,5 @@
 Summary:	Program that draws icons for minimized windows on desktop
-Summary(pl.UTF-8):	Program który rysuje ikony zminimalizowanych aplikacji na pulpicie
+Summary(pl.UTF-8):	Program rysujący ikony zminimalizowanych aplikacji na pulpicie
 Name:		backstep
 Version:	0.3
 Release:	0.1
@@ -9,10 +9,15 @@ Source0:	http://dl.sourceforge.net/backstep/%{name}-%{version}.tar.bz2
 # Source0-md5:	fb8980b7f59b66f87b0bfdb32c3a9032
 Patch0:		%{name}-xcomposite.patch
 URL:		http://backstep.sourceforge.net/
-BuildRequires:	gtk+2-devel
+BuildRequires:	autoconf
+BuildRequires:	automake
+BuildRequires:	gtk+2-devel >= 1:2.0.0
+BuildRequires:	pkgconfig
+BuildRequires:	xorg-lib-libSM-devel
 BuildRequires:	xorg-lib-libXcomposite-devel
 BuildRequires:	xorg-lib-libXdamage-devel
 BuildRequires:	xorg-lib-libXfixes-devel
+BuildRequires:	xorg-lib-libXpm-devel
 BuildRequires:	xorg-lib-libXrender-devel
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
